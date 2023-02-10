@@ -3,12 +3,12 @@
     x:Class="PlatziTest.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:PlatziTest.Views.Pages.StackLayoutSample"
+    xmlns:views="clr-namespace:PlatziTest.Views.Pages.AbsoluteLayoutSample"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:StackLayoutChallenge}"
+        ContentTemplate="{DataTemplate views:AbsoluteLayoutChallenge}"
         Route="MainPage" />
 
 </Shell>
