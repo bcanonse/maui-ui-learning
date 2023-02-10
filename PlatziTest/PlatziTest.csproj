@@ -49,10 +49,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\marie.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\Pages\FlyoutSample\FlyoutMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\FlyoutSample\FlyoutSamplePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\StackLayoutSample\StackLayoutChallenge.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\StackLayoutSample\StackLayoutSample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\TabbedPageSample\TabbedPage1.xaml">

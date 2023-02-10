@@ -1,7 +1,4 @@
-﻿using PlatziTest.Views.Pages.FlyoutSample;
-using PlatziTest.Views.Pages.TabbedPageSample;
-
-namespace PlatziTest;
+﻿namespace PlatziTest;
 
 public partial class App : Application
 {
@@ -9,6 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new TabbedPageSample();
+		MainPage = new AppShell();
 	}
 }
