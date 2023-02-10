@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatziTest.Views.Pages.GridSample.GridChallenge2"
+             Title="GridChallenge2">
+    <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*" RowSpacing="5" ColumnSpacing="5">
+        <BoxView Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Color="LightBlue" CornerRadius="5"/>
+        <BoxView Grid.Row="0" Grid.Column="3" Color="Silver" CornerRadius="5"/>
+        <BoxView Grid.Row="1" Grid.Column="3" Color="Silver" CornerRadius="5"/>
+        <BoxView Grid.Row="2" Grid.ColumnSpan="2" Color="Pink" CornerRadius="5"/>
+        <BoxView Grid.Row="2" Grid.Column="3" Color="Pink" CornerRadius="5"/>
+        <BoxView Grid.Row="3" Grid.Column="0" Color="Silver" CornerRadius="5"/>
+        <BoxView Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Color="Silver" CornerRadius="5"/>
+        <BoxView Grid.Row="4" Grid.Column="0" Color="LightBlue" CornerRadius="5"/>
+        <BoxView Grid.Row="4" Grid.Column="1" Color="LightBlue" CornerRadius="5"/>
+        <BoxView Grid.Row="4" Grid.Column="2" Color="LightBlue" CornerRadius="5"/>
+        <BoxView Grid.Row="5" Grid.ColumnSpan="3" Color="Pink" CornerRadius="5"/>
+    </Grid>
+</ContentPage>
