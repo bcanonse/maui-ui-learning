@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatziTest.Views.Pages.FlexLayoutSample.FlexLayoutChallenge"
+             Title="FlexLayoutChallenge">
+    <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Start">
+        <Label Text="Choose illustration" FontAttributes="Bold" FontSize="24"/>
+        <Frame BackgroundColor="White" BorderColor="Transparent" CornerRadius="20" Margin="0,5,0,0">
+            <FlexLayout AlignItems="Center" Direction="Column">
+                <Label Text="Nature" FontAttributes="Bold" TextColor="Silver" FontSize="38"/>
+                <Image Source="house" Aspect="AspectFill"/>
+                <Label Text="$ 54" TextColor="Coral" FontSize="48"/>
+            </FlexLayout>
+        </Frame>
+    </FlexLayout>
+</ContentPage>

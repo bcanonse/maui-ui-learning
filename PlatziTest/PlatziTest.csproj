@@ -50,6 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\creditcard.png" />
+	  <None Remove="Resources\Images\house.png" />
 	  <None Remove="Resources\Images\marie.png" />
 	  <None Remove="Resources\Images\mike.png" />
 	</ItemGroup>
@@ -59,6 +60,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\AbsoluteLayoutSample\AbsoluteLayoutSample.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\FlexLayoutSample\FlexLayoutChallenge.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\FlexLayoutSample\FlexLayoutSample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\FlyoutSample\FlyoutMenuPage.xaml">
