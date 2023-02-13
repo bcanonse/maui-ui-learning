@@ -49,7 +49,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\avatar.png" />
+	  <None Remove="Resources\Images\cancel.png" />
+	  <None Remove="Resources\Images\check.svg" />
 	  <None Remove="Resources\Images\creditcard.png" />
+	  <None Remove="Resources\Images\heart_like.svg" />
 	  <None Remove="Resources\Images\house.png" />
 	  <None Remove="Resources\Images\marie.png" />
 	  <None Remove="Resources\Images\mike.png" />
@@ -60,6 +64,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\AbsoluteLayoutSample\AbsoluteLayoutSample.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\ChallengeOne\ChallengeOne.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\FlexLayoutSample\FlexLayoutChallenge.xaml">

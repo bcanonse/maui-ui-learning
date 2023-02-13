@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatziTest.Views.Pages.ChallengeOne.ChallengeOne"
+             Title="ChallengeOne">
+    <VerticalStackLayout Margin="20" BackgroundColor="#fdfdfd">
+        <FlexLayout JustifyContent="SpaceBetween" AlignItems="Start" >
+
+            <AbsoluteLayout HorizontalOptions="Start">
+                <Frame IsClippedToBounds="True" CornerRadius="25" HasShadow="False" Padding="0" Margin="0,0,20,0" BorderColor="Transparent" BackgroundColor="#bedcd7" HeightRequest="120" WidthRequest="120">
+                    <Image Source="avatar" Aspect="AspectFill" />
+                </Frame>
+                <Image Source="check" Aspect="AspectFill"  AbsoluteLayout.LayoutBounds=".95,-.2,48,48" AbsoluteLayout.LayoutFlags="XProportional,YProportional"/>
+            </AbsoluteLayout>
+            <ImageButton Source="cancel" Aspect="AspectFill" HeightRequest="36" WidthRequest="36"/>
+        </FlexLayout>
+        <Label Text="Anton Jr." FontSize="36" FontAttributes="Bold" />
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Creative director at " TextColor="Silver" FontAttributes="Bold" FontSize="18"/>
+                    <Span Text="@ui8.net" FontAttributes="Bold" FontSize="18" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Label Text="A designer that keens simplicity and usability" TextColor="Silver" FontAttributes="Bold" FontSize="18"/>
+
+        <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,*,*" Margin="0,20,0,0" >
+
+            <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#1e56c3" TextColor="White" HeightRequest="50" Text="Book class | $1,300.00" FontAttributes="Bold" Margin="5"/>
+            <Button Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" BackgroundColor="#e7e8e9" BorderColor="#d4d9d9" TextColor="Black" FontAttributes="Bold" BorderWidth="1" HeightRequest="50" Text="Follow" Margin="10"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Students" Style="{StaticResource TitleStyle}"/>
+            <Label Grid.Row="2" Grid.Column="0" Text="35,789" Style="{StaticResource SubtitleStyle}" />
+
+            <BoxView Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Style="{StaticResource DividerLine}" />
+
+            <Label Grid.Row="1" Grid.Column="2" Text="Content" TextColor="Silver" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Grid.Row="2" Grid.Column="2" Text="3,648" TextColor="Black" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <BoxView Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" Style="{StaticResource DividerLine}" />
+
+            <Label Grid.Row="1" Grid.Column="4" Text="Followers" Style="{StaticResource TitleStyle}" />
+            <Label Grid.Row="2" Grid.Column="4" Text="3,6m" Style="{StaticResource SubtitleStyle}"/>
+        </Grid>
+
+        <Frame BorderColor="Transparent" CornerRadius="25" IsClippedToBounds="False" BackgroundColor="#f9f9f9" Margin="0, 20, 0, 0" Padding="10" HasShadow="True">
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*,*">
+                <Button Grid.Column="0" Grid.Row="0" Text="Courses" Style="{StaticResource ButtonSelected}"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Source files" Style="{StaticResource ButtonNotSelected}"/>
+                <Button Grid.Row="0" Grid.Column="2" Text="Discussion" Style="{StaticResource ButtonNotSelected}" />
+            </Grid>
+        </Frame>
+
+        <Frame BorderColor="Transparent" CornerRadius="15" BackgroundColor="#ecdcf4" Margin="0, 20, 0, 0" HasShadow="True">
+            <Grid RowDefinitions="Auto,*,Auto,Auto" ColumnDefinitions="Auto, Auto" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Label Text="Become a UX Designer" FontSize="24" Grid.Row="0" Grid.ColumnSpan="1"/>
+                <ImageButton HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0" Grid.Column="1" Source="heart_like" Aspect="AspectFill" WidthRequest="28" HeightRequest="28" Margin="15, 0, 0, 0" />
+                <Label Text="Learn the skills get the Job" FontSize="16" TextColor="Silver" FontAttributes="Bold" Grid.Row="1" Grid.ColumnSpan="1"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="/ / / / /" FontSize="38" TextColor="Black" FontAttributes="Bold" />
+                <Label Grid.Row="3" Grid.Column="0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="4.85 " TextColor="Black" FontAttributes="Bold" FontSize="38"/>
+                            <Span Text="★ ratings" FontAttributes="Bold" FontSize="18" TextColor="Black" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Grid.Row="3" Grid.Column="1" Text="48h" FontSize="18" TextColor="Black" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+            </Grid>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
