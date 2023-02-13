@@ -3,12 +3,12 @@
     x:Class="PlatziTest.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:PlatziTest.Views.Pages.ChallengeOne"
+    xmlns:views="clr-namespace:PlatziTest.Views.JobProfile"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate views:ChallengeOne}"
+        ContentTemplate="{DataTemplate views:JobProfilePage}"
         Route="MainPage" />
 
 </Shell>
