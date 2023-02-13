@@ -58,10 +58,15 @@
 	  <None Remove="Resources\Images\house.png" />
 	  <None Remove="Resources\Images\jose.png" />
 	  <None Remove="Resources\Images\marie.png" />
+	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Resources\Images\microsoft_logo.png" />
 	  <None Remove="Resources\Images\mike.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\JobProfile\JobDescriptionPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\JobProfile\JobProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
